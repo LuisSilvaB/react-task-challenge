@@ -1,9 +1,9 @@
 import React, { useEffect, useState} from 'react'
 import PropTypes from 'prop-types'
 
-import './desktop-dashboard.css'
-import './android-dashboard.css'
-import './iphone-dashboard.css'
+import './desktop-home.css'
+import './android-home.css'
+import './iphone-home.css'
 
 import SideBar from '../../components/sidebar/sideBar'
 import NavigationBar from '../../components/topNavigationNavbar/navigationBar'
@@ -11,7 +11,7 @@ import NavigationBar from '../../components/topNavigationNavbar/navigationBar'
 import useAppContext from '../../hooks/context/useAppContext'
 import MainControls from '../../components/mainControls/mainControls'
 import AddButton from '../../components/addButton/addButton'
-export default function DashboardPage() {
+export default function Home() {
   const { typeDevice } = useAppContext()
   const [ optionActive, setOptionActive ] = useState(''); 
   const [ isOpen, setIsOpen ] = useState('close'); 
@@ -37,14 +37,14 @@ export default function DashboardPage() {
   }
   
   return (
-    <div className={`${typeDevice}-dashboard`}
+    <div className={`${typeDevice}-home`}
     onTouchStart={startDrag}
     onTouchMove={finishDrag}
     onClick={closeOnTouch}
     >
-      <div className={`${typeDevice}-dashboard__container`}>
+      <div className={`${typeDevice}-home__container`}>
         <SideBar isOpen = { isOpen } typeDevice = { typeDevice } optionActive = { optionActive } handleOptionClick = {handleOptionClick}/>
-        <div className={`${typeDevice}-dashboard__main-content`}>
+        <div className={`${typeDevice}-home__main-content`}>
           <NavigationBar typeDevice = { typeDevice }/>  
           <MainControls typeDevice = { typeDevice } optionActive= { optionActive } setOptionActive = { setOptionActive }/>
           {typeDevice === 'android'? <AddButton typeDevice = {typeDevice}/> : <></>}
@@ -53,7 +53,7 @@ export default function DashboardPage() {
     </div>
   )
 }
-DashboardPage.protoTypes = {
+Home.protoTypes = {
   isOpen: PropTypes.string,
   typeDevice: PropTypes.string,
 }
