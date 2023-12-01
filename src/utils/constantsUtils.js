@@ -7,3 +7,9 @@ export const POINT_ESTIMATE = {
     FOUR:4,
     EIGHT:8,
 }
+export const TASK_SELECT_OPTIONS = {
+    formEstimate:'Estimate',
+    formAssigne:'Assignee',
+    formLabel:'Label',
+    formCalendar:'Due date',
+}

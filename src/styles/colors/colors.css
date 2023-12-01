@@ -2,6 +2,7 @@
     /*NEUTRAL*/
     --color-neutral-1:rgba(255, 255, 255, 1);
     --color-neutral-2:rgba(148, 151, 154, 1); 
+    --color-neutral-2-1:rgba(148, 151, 154, 0.1); 
     --color-neutral-3:rgba(57, 61, 65, 1); 
     --color-neutral-4:rgba(44, 47, 51, 1); 
     --color-neutral-5:rgba(34, 37, 40, 1);
