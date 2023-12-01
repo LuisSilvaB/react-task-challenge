@@ -1,0 +1,71 @@
+@media (max-width:600px) {
+    .android-sidebar{
+        position: fixed;
+        transition: all ease-in-out 0.4s;
+        box-sizing: border-box;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0px;
+        background-color: var(--color-neutral-4);
+    }
+    .android-sidebar__img{
+        margin-top: 20px;
+        width: 80px;
+        height: 80px;
+    } 
+    .android-sidebar__list{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .android-sidebar__option {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+    } 
+    .android-sidebar__option .sidebar-link{
+        color: var(--color-neutral-2);
+        background-color: transparent;
+    }
+    .close{
+        transform: translateX(-100%);
+    }
+    
+    .open{}
+    .desktop-active, 
+    .desktop-active .sidebar-link {
+      cursor: pointer;
+      color: var(--color-primary-3); 
+    }
+    
+    .sidebar-active {
+        background: linear-gradient(262deg, rgba(173, 81, 87, 0.457) 0%, rgba(255, 0, 97, 0) 100%)
+    }
+    .sidebar-sidebar-link {
+      text-decoration: none; 
+    }
+    .sidebar-active:before{
+        position: absolute;
+        content: '';
+        background-color: var(--color-primary-4);
+        width: 5px;
+        height: 100%;
+        right: 0;
+        top: 0px;
+        bottom: 0px;
+    }
+
+}

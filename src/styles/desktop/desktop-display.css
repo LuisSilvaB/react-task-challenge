@@ -1,0 +1,78 @@
+/*DISPLAY*/
+    /*DISPLAY-REGULAR*/
+    .desktop-regular-xL-display {
+        font-size: 64px;
+        line-height: 88px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    .desktop-regular-L-display {
+        font-size: 56px;
+        line-height: 72px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    
+    .desktop-regular-M-display {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    
+    .desktop-regular-S-display {
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    
+    .desktop-regular-xS-display {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    
+        /*DISPLAY-BOLD*/
+    
+    .desktop-bold-xL-display {
+        font-size: 64px;
+        line-height: 88px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+        
+    }
+    .desktop-bold-L-display {
+        font-size: 56px;
+        line-height: 72px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+        
+    }
+    .desktop-bold-M-display {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+        
+    }
+    .desktop-bold-S-display {
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+        
+    }
+    .desktop-bold-xS-display {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    

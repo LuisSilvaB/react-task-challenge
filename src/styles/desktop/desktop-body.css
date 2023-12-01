@@ -1,0 +1,60 @@
+   /*BODY*/
+        /*BODY-REGULAR*/
+    .desktop-regular-xL-body {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    .desktop-regular-L-body {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    .desktop-regular-M-body {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    .desktop-regular-S-body {
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    
+        /*BODY-BOLD*/
+    .desktop-bold-xL-body {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .desktop-bold-L-body {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .desktop-bold-M-body {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .desktop-bold-S-body {
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }

@@ -1,0 +1,56 @@
+   /*BODY*/
+        /*BODY-REGULAR*/
+    .android-regular-xL-body {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+        font-family: sans-serif;
+    }
+    .android-regular-L-body {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+        font-family: sans-serif;
+    }
+    .android-regular-M-body {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        font-family: sans-serif;
+    }
+    .android-regular-S-body {
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        font-family: sans-serif;
+    }
+    
+        /*BODY-BOLD*/
+    .android-bold-xL-body {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .android-bold-L-body {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .android-bold-M-body {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .android-bold-S-body {
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }

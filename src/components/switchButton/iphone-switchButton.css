@@ -1,0 +1,22 @@
+@media (max-width: 600px){
+    .iphone-switch__options-container{
+        display: flex;
+        width: 90%;
+        padding: 5px;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--color-neutral-4);
+    }
+    .iphone-switch__option-container{
+        flex: 1;
+        height: 100%;
+    }
+    .iphone-switch__option-container-active{
+        background-color: var(--color-neutral-2);
+        border-radius: 8px;
+    }
+    .iphone-switch__option{
+        text-align: center;
+    }
+}

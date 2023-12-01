@@ -1,0 +1,20 @@
+@media (max-width:600px) {
+    .iphone-dashboard{
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-neutral-5);  
+    }
+    .iphone-dashboard__container{
+        width: 100%;
+        height: 100%;
+    }
+    .iphone-dashboard__main-content{
+        width: 100%;
+        height: 100vh;
+        height: auto;
+    }
+}

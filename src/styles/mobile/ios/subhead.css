@@ -1,0 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+.iphone-regular-L-subhead{
+    font-size: 15px;
+    line-height: 15px;  
+    letter-spacing: 1px;
+    font-weight: 400; 
+    font-family: 'SF Pro Display', sans-serif;
+}
+.iphone-regular-M-subhead{
+    font-size: 14px;
+    line-height: 14px;  
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+}
+.iphone-regular-S-subhead{
+    font-size: 13px;
+    line-height: 13px;  
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+}
+.iphone-regular-xS-subhead{
+    font-size: 12px;
+    line-height: 12px;  
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+}

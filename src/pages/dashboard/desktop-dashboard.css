@@ -1,0 +1,22 @@
+@media (min-width: 601px){
+    .desktop-dashboard{
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-neutral-5);  
+    }
+    .desktop-dashboard__container{
+        width: 98%;
+        height: 96%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .desktop-dashboard__main-content{
+        width: 100%;
+        height: auto;
+    }
+} 

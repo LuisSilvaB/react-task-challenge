@@ -1,0 +1,17 @@
+@media (max-width:600px) {
+    .android-mainControls__button-add{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--color-primary-4);
+    }
+    .android-mainControls__button-add:hover{
+        cursor: pointer;
+    }
+}

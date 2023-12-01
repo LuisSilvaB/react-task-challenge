@@ -1,0 +1,78 @@
+/*DISPLAY*/
+    /*DISPLAY-REGULAR*/
+    .android-regular-xL-display {
+        font-size: 64px;
+        line-height: 88px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    .android-regular-L-display {
+        font-size: 56px;
+        line-height: 72px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    
+    .android-regular-M-display {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    
+    .android-regular-S-display {
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    
+    .android-regular-xS-display {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+    }
+    
+        /*DISPLAY-BOLD*/
+    
+    .android-bold-xL-display {
+        font-size: 64px;
+        line-height: 88px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+        
+    }
+    .android-bold-L-display {
+        font-size: 56px;
+        line-height: 72px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+        
+    }
+    .android-bold-M-display {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+        
+    }
+    .android-bold-S-display {
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+        
+    }
+    .android-bold-xS-display {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    

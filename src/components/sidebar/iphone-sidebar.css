@@ -1,0 +1,55 @@
+@media (max-width:600px) {
+    .iphone-sidebar{
+        position: fixed;
+        transition: all ease-in-out 0.4s;
+        box-sizing: border-box;
+        width: 100%;
+        height: 8%;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0px;
+        background-color: var(--color-neutral-4);
+    }
+    .iphone-sidebar__img{
+        margin-top: 20px;
+        width: 80px;
+        height: 80px;
+    } 
+    .iphone-sidebar__list{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+    .iphone-sidebar__option {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4px;
+    } 
+    .iphone-sidebar__option .sidebar-link{
+        color: var(--color-neutral-2);
+        background-color: transparent;
+    }
+    .iphone-active, 
+    .iphone-active .sidebar-link {
+      cursor: pointer;
+      color: var(--color-primary-4); 
+    }
+
+    .iphone-sidebar-link {
+      text-decoration: none; 
+    }
+
+}

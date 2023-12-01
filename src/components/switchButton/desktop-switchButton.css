@@ -1,0 +1,31 @@
+@media (min-width: 601px) {
+    .desktop-switch__button-container{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .desktop-switch__button{
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        border: solid 0.1px transparent;
+        border-radius: 8px;
+        padding: 7px;
+    }
+    .desktop-switch-button:hover{
+        cursor: pointer;
+    }
+    .desktop-switch__button-active{
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        border: solid 0.1px;
+        border-radius: 8px;
+        padding: 7px;
+        color: var(--color-primary-4);
+    }
+    .desktop-switch__button-active:hover{
+        cursor: pointer;
+    }
+}

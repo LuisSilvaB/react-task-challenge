@@ -1,0 +1,52 @@
+@media (max-width: 600px){
+    .android-navigationBar{
+        box-sizing: border-box;
+        width: 100%;
+        height: 64px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-neutral-4);
+    }
+    .android-navigationBar__icon{
+        width: 40px;
+        width: 40px;
+        color: var(--color-neutral-2);
+    }
+    .android-xcircle{
+        display: none;
+    }
+    .android-navigationBar__search-container{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+    .android-navigationBar__search-input-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        border-radius: 16px;
+    }
+
+    .android-navigationBar__input{
+        box-sizing: border-box;
+        width: 70%;
+        padding: 10px;
+        outline: none;
+        border: none;
+        color: var(--color-neutral-2);
+        background-color: var(--color-neutral-4);
+    }
+    .android-navigationBar__img{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+}

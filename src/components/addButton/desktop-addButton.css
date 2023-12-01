@@ -1,0 +1,14 @@
+@media (min-width: 601px) {
+    .desktop-mainControls__button-add{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: var(--color-primary-4);
+    }
+    .desktop-mainControls__button-add:hover{
+        cursor: pointer;
+    }
+}
