@@ -1,10 +1,14 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { useGetUserDataQuery } from "../hooks/graphql/queries/useGetUsersDataQuery";
+import { useCreateTaskMutation } from "../hooks/graphql/mutations/useCreateTaskMutation";
 export const AppContext = createContext(); 
 
 export const AppContextProvider = ({children}) => {
     const [typeDevice, setTypeDevice] = useState('desktop'); 
     const [messageError, setMessageError] = useState(); 
     const [users, setUsers] = useState(); 
+    const [task, setTask] = useState(); 
+
     useEffect(()=>{
         const userAgent = window.navigator.userAgent.toLowerCase();
         (()=>{
@@ -24,10 +28,18 @@ export const AppContextProvider = ({children}) => {
         }
     };
 
-    
+    const CreateTask = (task) => {
+        const { createTask , loading, error, data } = useCreateTaskMutation(); 
+        createTask(task); 
+        return {loading, error, data}
+    }
+    const GetAllUsers = () => {
+        const { data, error, loading } =  useGetUserDataQuery(); 
+        return { data, error, loading }; 
+    }
 
     return(
-        <AppContext.Provider value={{typeDevice}}>
+        <AppContext.Provider value={{typeDevice, task ,setTask, CreateTask, GetAllUsers}}>
             {children}
         </AppContext.Provider>
     )

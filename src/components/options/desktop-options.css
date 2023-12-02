@@ -1,0 +1,28 @@
+@media (min-width: 601px) {
+    .desktop-options-container{
+        transition: all ease-in-out 0.4s;
+        position: absolute;
+        transform: translateY(50px);
+        width: 100%;
+        height: auto;
+        padding: 8px;
+        display: flex;
+        flex-direction:column;
+        gap: 10px;
+        border: solid var(--color-neutral-2) 1px;
+        border-radius: 8px;
+        background-color: var(--color-neutral-3);
+    }
+    .desktop-option{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-height: fit-content;
+        gap: 10px;
+    }
+    .desktop-option-text{
+        margin: 0px;
+        color: var(--color-neutral-1);
+    }
+}

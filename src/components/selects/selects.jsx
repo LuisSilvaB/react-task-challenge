@@ -9,16 +9,15 @@ import Select from '../select/select'
 
 export default function Selects(props) {
     const { typeDevice } = props;  
-
     return (
     <div className={`${typeDevice}-taskSelects`}>
         {
             Object.keys(TASK_SELECT_OPTIONS).map((el, key) => {
                 const svg = setVarSvg(el)
                 return(
-                    <>
-                        <Select key = {key} svg = {svg} el = {el} typeDevice = {typeDevice}/>         
-                    </>
+                    <div key = {key}>
+                        <Select svg = {svg} el = {el} typeDevice = {typeDevice}/>         
+                    </div>
                 )
             }
             )

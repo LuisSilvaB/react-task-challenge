@@ -14,7 +14,7 @@ export default function FormTask(props) {
         <div className={`${typeDevice}-formTask`}>
           <div className={`${typeDevice}-formTask__shadow`}/>
           <div className={`${typeDevice}-formtask__content`}> 
-            <input type="text" placeholder='Task Title' className={`${typeDevice}-formtask__input ${typeDevice}-regular-xL-body`}/>
+            <input type="text" placeholder='Task Title' className={`${typeDevice}-formtask__input ${typeDevice}-regular-xL-body ${typeDevice}-body-xl-bold`}/>
             <Selects typeDevice = {typeDevice} typeForm = {typeForm} createTask = {createTask}/>
           </div>
         </div>

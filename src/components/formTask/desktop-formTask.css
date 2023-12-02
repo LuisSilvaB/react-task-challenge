@@ -36,7 +36,7 @@
         height: 20%;
         outline: none;
         border: none;
-        color: var(--color-neutral-2);
+        color: var(--color-neutral-1);
         background-color: var(--color-neutral-3);
     }
     .-selects-container
