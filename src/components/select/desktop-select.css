@@ -18,6 +18,9 @@
         background-color: var(--color-neutral-2-1);
         color: var(--color-neutral-1);
     }
+    .desktop-select:hover{
+        cursor: pointer;
+    }
     .desktop-select-img{
         width: 20px;
         height: 20px;

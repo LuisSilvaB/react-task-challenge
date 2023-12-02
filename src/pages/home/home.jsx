@@ -11,8 +11,9 @@ import NavigationBar from '../../components/topNavigationNavbar/navigationBar'
 import useAppContext from '../../hooks/context/useAppContext'
 import MainControls from '../../components/mainControls/mainControls'
 import AddButton from '../../components/addButton/addButton'
+import FormTask from '../../components/formTask/formTask'
 export default function Home() {
-  const { typeDevice } = useAppContext()
+  const { typeDevice, typeForm, isVisible, setIsVisible } = useAppContext()
   const [ optionActive, setOptionActive ] = useState(''); 
   const [ isOpen, setIsOpen ] = useState('close'); 
   const [ positionDrag, setPositionDrag ] = useState(); 
@@ -47,7 +48,8 @@ export default function Home() {
         <div className={`${typeDevice}-home__main-content`}>
           <NavigationBar typeDevice = { typeDevice }/>  
           <MainControls typeDevice = { typeDevice } optionActive= { optionActive } setOptionActive = { setOptionActive }/>
-          {typeDevice === 'android'? <AddButton typeDevice = {typeDevice}/> : <></>}
+          {typeDevice === 'android'? <AddButton /> : <></>}
+          <FormTask/>
         </div>
       </div>
     </div>

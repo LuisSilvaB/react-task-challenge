@@ -9,15 +9,13 @@ import './android-addButton.css'
 import './iphone-addButton.css'
 
 import FormTask from '../formTask/formTask';
+import useAppContext from '../../hooks/context/useAppContext';
 
 export default function AddButton(props) {
-  const [isVisible, setIsViseble] = useState(true);
-  const { typeDevice } = props;
-  const { createTask , loading, error, data } = useCreateTaskMutation();  
+  const {typeDevice, setTypeForm, CreateTask, setIsVisible, isVisible} = useAppContext()
   return (
-    <div className={`${typeDevice}-mainControls__button-add`} >
+    <div className={`${typeDevice}-mainControls__button-add`} onClick={()=>{setIsVisible(!isVisible)}}>
         {typeDevice === 'iphone'?<BsPlusCircleFill size={30}/>:<BsPlus size={30}/>}
-        <FormTask typeDevice = { typeDevice } typeForm = {"create"} createTask = { createTask } isVisible = {isVisible} setIsViseble = {setIsViseble}/>
     </div>
   )
 }

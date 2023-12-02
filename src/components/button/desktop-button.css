@@ -1,0 +1,25 @@
+@media (min-width: 601px) {
+    .desktop-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 8px;
+        border-radius: 8px;
+    } 
+    .desktop-button:hover{
+        cursor: pointer;
+    }
+    .desktop-button-cancel{}
+    .desktop-button-create{
+        background-color: var(--color-primary-4);
+        
+    }
+    .desktop-button-text{
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

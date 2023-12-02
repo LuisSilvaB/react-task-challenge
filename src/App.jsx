@@ -20,6 +20,7 @@ function App() {
     <AppContextProvider>
       <RoutesComponent />
       <Outlet/>
+      
     </AppContextProvider>
     // </ErrorBundary>
   )

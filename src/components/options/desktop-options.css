@@ -1,9 +1,7 @@
 @media (min-width: 601px) {
     .desktop-options-container{
+        z-index: 1;
         transition: all ease-in-out 0.4s;
-        position: absolute;
-        transform: translateY(50px);
-        width: 100%;
         height: auto;
         padding: 8px;
         display: flex;
@@ -13,6 +11,27 @@
         border-radius: 8px;
         background-color: var(--color-neutral-3);
     }
+    .desktop-options-container-estimate{
+        width: auto;
+        position: absolute;
+        transform: translateY(50px);
+    }
+    .desktop-options-container-assignee{
+        width: 230px;
+        position: absolute;
+        transform: translate(-5px,50px);
+    }
+    .desktop-options-container-label{
+        width: auto;
+        position: absolute;
+        transform: translate(-5px,50px);
+    }
+    .desktop-options-container-calendar{
+        border: solid 1px var(--color-neutral-2);
+        width: auto;
+        position: absolute;
+        transform: translate(-100px,50px);
+    }
     .desktop-option{
         display: flex;
         flex-direction: row;
@@ -21,8 +40,28 @@
         max-height: fit-content;
         gap: 10px;
     }
+    .desktop-option-img{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
     .desktop-option-text{
-        margin: 0px;
+        overflow: hidden;
+        flex: 1;
+        text-overflow: "..";
+        white-space: nowrap;
         color: var(--color-neutral-1);
     }
+    .desktop-option-input-checkbox{
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        appearance: none;
+        border: 2px solid var(--color-neutral-1);
+        background-color: var(--color-neutral-3);
+    }
+    .desktop-option-input-checkbox:checked{
+        background-color: var(--color-neutral-1);
+    }
+
 }

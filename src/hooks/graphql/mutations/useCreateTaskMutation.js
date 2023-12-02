@@ -10,5 +10,5 @@ export const useCreateTaskMutation = () => {
             console.log("Mutation fail", error);
         }
     })
-    return { createTask , loading, error, data };
+    return [ createTask , {loading, error, data}] ;
 }

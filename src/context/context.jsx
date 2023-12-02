@@ -5,15 +5,25 @@ export const AppContext = createContext();
 
 export const AppContextProvider = ({children}) => {
     const [typeDevice, setTypeDevice] = useState('desktop'); 
+    const [typeForm, setTypeForm] = useState('desktop'); 
+    const [isVisible, setIsVisible] = useState(true);
     const [messageError, setMessageError] = useState(); 
     const [users, setUsers] = useState(); 
-    const [task, setTask] = useState(); 
+    const [userData, setUserData] = useState(); 
+    const [task, setTask] = useState({
+        name: "",
+        dueDate: "",
+        assigneeId: "",
+        pointEstimate: "",
+        status: "BACKLOG",
+        tags: []
+    }); 
+
 
     useEffect(()=>{
         const userAgent = window.navigator.userAgent.toLowerCase();
         (()=>{
             setDevice(userAgent)
-            
         })()
     },[])
     const setDevice = (data) => {
@@ -29,17 +39,21 @@ export const AppContextProvider = ({children}) => {
     };
 
     const CreateTask = (task) => {
-        const { createTask , loading, error, data } = useCreateTaskMutation(); 
+        const [ createTask , loading, error, data ] = useCreateTaskMutation(); 
         createTask(task); 
+        setTask({
+            name: "",
+            dueDate: "",
+            assigneeId: "",
+            pointEstimate: "",
+            status: "BACKLOG",
+            tags: []
+        }); 
         return {loading, error, data}
-    }
-    const GetAllUsers = () => {
-        const { data, error, loading } =  useGetUserDataQuery(); 
-        return { data, error, loading }; 
     }
 
     return(
-        <AppContext.Provider value={{typeDevice, task ,setTask, CreateTask, GetAllUsers}}>
+        <AppContext.Provider value={{typeDevice, task ,setTask, CreateTask, typeForm, setTypeForm, isVisible, setIsVisible}}>
             {children}
         </AppContext.Provider>
     )
