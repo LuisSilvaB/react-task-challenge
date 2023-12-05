@@ -3,7 +3,7 @@ import { DELETE_TASK } from "./../../../graphql/mutations/deleteTask.js"
 import { GET_TASKS } from "../../../graphql/queries/tasks.js";
 import useAppContext from "../../context/useAppContext.js";
 
-export const useDeleteTaskMutation = () => {
+export const useDeleteTaskMutation = (status) => {
     const {setShowAlert, setMessageAlert, setTypeAlert} = useAppContext()
     const [ deleteTask, {loading, error, data} ] = useMutation(DELETE_TASK,{
         onCompleted: (data) => {
@@ -26,11 +26,12 @@ export const useDeleteTaskMutation = () => {
             query:GET_TASKS,
             variables:{
                 input:{
-                    status:'BACKLOG',
+                    status:status,
                 }
             }
         }]
     })
+    console.log(status);
     const deleteMutationsOptions = {loading, error, data}
     return { deleteTask , deleteMutationsOptions };
 }

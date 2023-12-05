@@ -16,11 +16,11 @@ import Options from '../options/options';
 import { filterValuesTags } from '../../utils/filterValuesTags';
 
 export default function Button(props) {
+    const { typeButton, typeLocalOptions, setTypeLocalOptions, task } = props; 
+    const { clearStates, setInfoFormtask, taskContext, setTaskContext, typeDevice, isVisible, setIsVisible, typeForm, setTypeForm } = useAppContext(); 
     const { createTask } = useCreateTaskMutation('BACKLOG');
     const { updateTask } = useUpdataTaskMutation();  
-    const { deleteTask } = useDeleteTaskMutation(); 
-    const { clearStates, setInfoFormtask, taskContext, setTaskContext, typeDevice, isVisible, setIsVisible, typeForm, setTypeForm } = useAppContext(); 
-    const { typeButton, typeLocalOptions, setTypeLocalOptions, task } = props; 
+    const { deleteTask } = useDeleteTaskMutation(taskContext.status); 
     if (typeButton === "close") {
         const handleCloseForm = () => {
             clearStates()
