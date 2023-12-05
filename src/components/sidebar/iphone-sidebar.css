@@ -1,5 +1,6 @@
 @media (max-width:600px) {
     .iphone-sidebar{
+        z-index: 1;
         position: fixed;
         transition: all ease-in-out 0.4s;
         box-sizing: border-box;

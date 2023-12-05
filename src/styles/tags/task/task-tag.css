@@ -1,0 +1,94 @@
+.task-tag {
+    position: relative;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.task-tag-select{
+    position: relative;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 4px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.task-tag-select-container{
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.react-tag-container{
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: lightblue;
+    opacity: 10%;
+}
+
+.react-tag{
+    color: lightblue;
+}
+.node-tag-container{
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(165, 247, 200);
+    opacity: 10%;
+}
+.node-tag{
+    color:  rgb(165, 247, 200);
+}
+.rails-tag-container{
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: var(--color-primary-4);
+    opacity: 10%;
+
+}
+.rails-tag{
+    color:  var(--color-primary-4);
+}
+.ios-tag-container{
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: var(--color-secondary-4);
+    opacity: 10%;
+}
+.ios-tag{
+    color: var(--color-secondary-4);
+}
+.android-tag-container{
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: var(--color-tertiary-4);
+    opacity: 10%;
+}
+.android-tag{
+    color: var(--color-tertiary-4);
+}

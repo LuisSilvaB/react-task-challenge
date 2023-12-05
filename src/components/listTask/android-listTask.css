@@ -1,0 +1,27 @@
+@media (max-width:600px) {
+    .android-listTask{
+        margin-top: 30px;
+        position: relative; 
+        box-sizing: border-box;
+        flex: 0 0 400px;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        overflow: scroll;
+    }
+    .android-listTask::-webkit-scrollbar{
+        height: 10px;
+        width: 10px;
+        border-radius: 20px;
+
+    }
+    .android-listTask::-webkit-scrollbar-thumb{
+        width: 1px;
+        height: 10px;
+        background-color: var(--color-neutral-3);
+        border-radius: 20px;
+    }
+
+}

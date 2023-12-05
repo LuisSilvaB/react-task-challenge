@@ -1,5 +1,6 @@
 @media (max-width:600px) {
     .android-sidebar{
+        z-index: 1;
         position: fixed;
         transition: all ease-in-out 0.4s;
         box-sizing: border-box;
@@ -36,26 +37,40 @@
         align-items: center;
         gap: 20px;
     } 
+    .android-sidebar__option:active{
+        color: currentColor;
+    } 
     .android-sidebar__option .sidebar-link{
         color: var(--color-neutral-2);
         background-color: transparent;
     }
+
     .close{
         transform: translateX(-100%);
     }
     
     .open{}
-    .desktop-active, 
-    .desktop-active .sidebar-link {
+
+    .android-active, 
+    .android-active .sidebar-link {
       cursor: pointer;
       color: var(--color-primary-3); 
     }
     
     .sidebar-active {
-        background: linear-gradient(262deg, rgba(173, 81, 87, 0.457) 0%, rgba(255, 0, 97, 0) 100%)
+        background: linear-gradient(262deg, rgba(173, 81, 87, 0.457) 0%, rgba(255, 0, 97, 0) 100%);
+        text-decoration: none;
+        color: var(--color-primary-4);
     }
-    .sidebar-sidebar-link {
-      text-decoration: none; 
+    .sidebar-active:active{
+        text-decoration: none;
+        color: var(--color-primary-4);
+    }
+    .sidebar-active .sidebar-link{
+    }
+    .sidebar-link {
+        text-decoration: none;
+        color: currentColor;
     }
     .sidebar-active:before{
         position: absolute;

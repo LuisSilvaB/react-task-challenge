@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import { BsFillGridFill, BsList } from "react-icons/bs";
+import { BsFillGridFill, BsList, BsFillPersonFill } from "react-icons/bs";
 
 import ravLogo from '/img/sidebar/ravnLogo.svg'  
 
@@ -23,7 +23,7 @@ export default function SideBar(props) {
           onClick={() => handleOptionClick('dashboard')}
         >
           <BsFillGridFill size={25}/>
-          <Link className={`sidebar-link ${typeDevice}-regular-S-subhead`}>
+          <Link to={'/'} className={`sidebar-link ${typeDevice}-regular-S-subhead`}>
             Dashboard
           </Link>
         </li>
@@ -40,7 +40,7 @@ export default function SideBar(props) {
           onClick={() => handleOptionClick('myTask')}
         >
           <BsList size={25}/>
-          <Link className={`sidebar-link ${typeDevice}-regular-S-subhead`}>
+          <Link to = {'/myTasks'} className={`sidebar-link ${typeDevice}-regular-S-subhead`}>
             My Task
           </Link>
         </li>
@@ -53,24 +53,33 @@ export default function SideBar(props) {
     <div className={`${typeDevice}-sidebar ${isOpen}`}>
       <img className={`${typeDevice}-sidebar__img`} src={ravLogo}/>
       <ul className={`${typeDevice}-sidebar__list`}>
+        <Link to={'/'} className={`sidebar-link ${typeDevice}-bold-M-body`}>
         <li className={`${typeDevice}-sidebar__option ${
             optionActive === 'dashboard' ? 'sidebar-active' : ''}`}
             onClick={() => handleOptionClick('dashboard')}
           >
             <BsFillGridFill />
-            <Link className={`sidebar-link ${typeDevice}-regular-M-body`}>
               DASHBOARD
-            </Link>
           </li>
-          <li className={`${typeDevice}-sidebar__option ${
-            optionActive === 'myTask' ? 'sidebar-active' : ''}`}
-            onClick={() => handleOptionClick('myTask')}
-          >
-            <BsList />
-            <Link className={`sidebar-link ${typeDevice}-regular-M-body`}>
-              MY TASK
-            </Link>
-          </li>
+          </Link>
+          <Link to={'/myTasks'} className={`sidebar-link ${typeDevice}-bold-M-body`}>
+              <li className={`${typeDevice}-sidebar__option ${
+                optionActive === 'myTask' ? 'sidebar-active' : ''}`}
+                onClick={() => handleOptionClick('myTask')}
+              >
+                <BsList />
+                  MY TASK
+              </li>
+          </Link>
+          <Link to={'/profile'} className={`sidebar-link ${typeDevice}-bold-M-body`}>
+              <li className={`${typeDevice}-sidebar__option ${
+                optionActive === 'profile' ? 'sidebar-active' : ''}`}
+                onClick={() => handleOptionClick('profile')}
+              >
+                <BsFillPersonFill />
+                  Profile
+              </li>
+          </Link>
       </ul>
     </div>
   )

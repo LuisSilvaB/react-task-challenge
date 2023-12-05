@@ -19,4 +19,10 @@
     .iphone-switch__option{
         text-align: center;
     }
+    .switchLink{
+        color: currentColor;
+    }
+    .switchLink:hover{
+        color: var(--color-neutral-4);
+    }
 }

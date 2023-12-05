@@ -1,0 +1,14 @@
+@media (min-width:601px) {
+    .desktop-listTask{
+        flex: 0 0 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .listTask{
+        flex: 0 0 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

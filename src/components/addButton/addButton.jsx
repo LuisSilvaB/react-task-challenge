@@ -11,10 +11,19 @@ import './iphone-addButton.css'
 import FormTask from '../formTask/formTask';
 import useAppContext from '../../hooks/context/useAppContext';
 
-export default function AddButton(props) {
-  const {typeDevice, setTypeForm, CreateTask, setIsVisible, isVisible} = useAppContext()
+export default function AddButton() {
+  const {typeDevice, setIsVisible, isVisible, setTypeForm, typeForm, clearStates} = useAppContext()
+  const handleTypeForm = () => {
+    clearStates(); 
+    typeForm == "" 
+    ? setTypeForm("create")
+    : setTypeForm("")
+}
   return (
-    <div className={`${typeDevice}-mainControls__button-add`} onClick={()=>{setIsVisible(!isVisible)}}>
+    <div className={`${typeDevice}-mainControls__button-add`} onClick={()=>{
+      handleTypeForm();  
+      setIsVisible(!isVisible); 
+      }}>
         {typeDevice === 'iphone'?<BsPlusCircleFill size={30}/>:<BsPlus size={30}/>}
     </div>
   )

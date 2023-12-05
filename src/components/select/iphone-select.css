@@ -1,0 +1,42 @@
+@media (max-width: 600px) {
+    .iphone-select-container{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .iphone-select{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 10px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        border-radius: 4px;
+        background-color: var(--color-neutral-2-1);
+        color: var(--color-neutral-1);
+    }
+    .iphone-select:hover{
+        cursor: pointer;
+    }
+    .iphone-select-img{
+        width: 20px;
+        height: 20px;
+    }
+    .iphone-select-text {
+        margin: 0px;
+        display: flex;
+        gap: 20px;
+        width: auto;
+        overflow: hidden;
+        align-items: center;
+        text-overflow: "..";
+        white-space: nowrap;
+    }
+    .iphone.taskSelect__options-container{
+
+    }
+}

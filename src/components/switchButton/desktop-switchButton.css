@@ -28,4 +28,10 @@
     .desktop-switch__button-active:hover{
         cursor: pointer;
     }
+    .switchLink{
+        color: currentColor;
+    }
+    .switchLink:hover{
+        color: var(--color-primary-4);
+    }
 }

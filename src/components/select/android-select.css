@@ -1,0 +1,42 @@
+@media (max-width: 600px) {
+    .android-select-container{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .android-select{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 10px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        border-radius: 4px;
+        background-color: var(--color-neutral-2-1);
+        color: var(--color-neutral-1);
+    }
+    .android-select:hover{
+        cursor: pointer;
+    }
+    .android-select-img{
+        width: 20px;
+        height: 20px;
+    }
+    .android-select-text {
+        margin: 0px;
+        display: flex;
+        gap: 20px;
+        width: auto;
+        overflow: hidden;
+        align-items: center;
+        text-overflow: "..";
+        white-space: nowrap;
+    }
+    .android.taskSelect__options-container{
+
+    }
+}

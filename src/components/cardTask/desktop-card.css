@@ -1,0 +1,96 @@
+@media (min-width:601px) {
+    .desktop-card{
+        z-index: 0;
+        box-sizing: border-box;
+        padding: 16px;
+        width: 100%;
+        min-height: 230px;
+        height: 230px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--color-neutral-4);
+    }
+    .desktop-card:hover{
+      cursor: pointer;
+    }
+    .desktop-card__header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .desktop-card-header-text {}
+    
+    .desktop-card__dots-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .desktop-card__points {}
+      
+    .desktop-card__tag-date {
+        display: flex;
+        gap: 10px;
+    }
+      
+    .desktop-card__tag-img {
+
+    }
+      
+    .desktop-card__tags-container {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow: hidden;
+        text-overflow: "..";
+        white-space: nowrap;
+    }
+    
+    .desktop-card__tag {
+
+    }
+      
+    .desktop-card__fotter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+      
+      .desktop-card__fotter-user-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .desktop-card__fotter-user-img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+      
+      .desktop-card__fotter-user-name {}
+      
+      .desktop-card__fotter-info-container {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+      
+      .desktop-card__fotter-info-img {}
+      
+      .desktop-card__fotter-info-branch {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+}

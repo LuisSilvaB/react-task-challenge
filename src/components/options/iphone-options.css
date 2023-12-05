@@ -1,0 +1,100 @@
+@media (max-width: 601px) {
+    .iphone-options-container{
+        z-index: 2;
+        position: relative;
+        transition: all ease-in-out 0.4s;
+        height: auto;
+        padding: 8px;
+        display: flex;
+        flex-direction:column;
+        gap: 10px;
+        border: solid var(--color-neutral-2) 1px;
+        border-radius: 8px;
+        background-color: var(--color-neutral-3);
+    }
+    .iphone-options-container-estimate{
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translate(100px,80px);
+    }
+    .iphone-options-container-assignee{
+        width: 250px;
+        border: solid;
+        position: absolute;
+        transform: translate(40px,-20px);
+    }
+    .iphone-options-container-label{
+        width: 250px;
+        position: absolute;
+        transform: translate(40px,-20px);
+    }
+    .iphone-options-container-calendar{
+        z-index: 2;
+        border: solid 1px var(--color-neutral-2);
+        width: 300px;
+        position: absolute;
+        transform: translate(20px,-100px);
+    }
+    .iphone-option{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-height: fit-content;
+        gap: 10px;
+    }
+    .iphone-option-img{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+    .iphone-option-text{
+        overflow: hidden;
+        flex: 1;
+        text-overflow: "..";
+        
+        white-space: nowrap;
+        color: var(--color-neutral-1);
+    }
+    .iphone-option-input-checkbox{
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        appearance: none;
+        border: 2px solid var(--color-neutral-1);
+        background-color: var(--color-neutral-3);
+    }
+    .iphone-option-input-checkbox:checked{
+        background-color: var(--color-neutral-1);
+    }
+    .iphone-options-card{
+        z-index: 1;
+        width: 120px;
+        position: absolute;
+        transform: translate(-40px,55px);
+    }
+    .iphone-options-card-container{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        padding:10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: var(--color-neutral-3);
+        border: solid 0.1px var(--color-neutral-1);
+        border-radius: 8px;
+    }
+    .iphone-options-card-option{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+}

@@ -1,5 +1,6 @@
 @media (min-width: 601px) {
     .desktop-button{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -12,7 +13,7 @@
     }
     .desktop-button-cancel{}
     .desktop-button-create{
-        background-color: var(--color-primary-4);
+        background-color: var(--color-primary-2);
         
     }
     .desktop-button-text{
@@ -21,5 +22,8 @@
         justify-content: center;
         align-items: center;
 
+    }
+    .desktop-button-cardoptions{
+        width: 100%;
     }
 }

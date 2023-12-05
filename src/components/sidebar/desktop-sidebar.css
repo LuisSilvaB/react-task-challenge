@@ -58,6 +58,7 @@
     }
     .sidebar-link {
       text-decoration: none; 
+      color: currentColor;
     }
     .sidebar-active:before{
         position: absolute;

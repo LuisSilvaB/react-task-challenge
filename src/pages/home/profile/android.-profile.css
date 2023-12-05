@@ -1,0 +1,88 @@
+@media screen and (max-width: 600px) {
+    .android-profile {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        border-radius: 16px;
+        border: solid 1px var(--color-neutral-2);
+        background-color: var(--color-neutral-4);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .android-profile__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .android-profile__img {
+      border-radius: 50%;
+      width: 150px;  
+    }
+    
+    .android-profile__name {
+      font-size: 20px;  
+    }
+    
+    .android-profile__email {
+      font-size: 20px;
+      margin: 0px;
+    }
+    
+    .android-profile__type {
+      background-color: var(--color-neutral-1);
+      color: var(--color-neutral-4);
+      width: fit-content;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 20px;
+      margin: 0px;
+      font-weight: bold;
+    }
+    
+    .android-profile__skeleton {
+      background-color: var(--color-neutral-2);
+      height: 30px;
+      width: 200px;   
+    }
+    
+    .android-profile__links-container{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+    .android-profile__links {
+        box-sizing: border-box;
+        transition: all ease-in-out 0.4s;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: var(--color-neutral-1);
+        color: var(--color-neutral-4);
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .android-profile__links:hover{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        cursor: pointer;
+        border: solid 0.1px var(--color-neutral-1);
+        background-color: var(--color-neutral-4);
+        color: var(--color-neutral-1);
+    }
+    
+    .android-profile__links-title {
+      font-weight: bold;  
+      margin: 0px;
+    }
+    
+    .android-profile__links-icon {
+      font-size: 28px;
+    }
+}

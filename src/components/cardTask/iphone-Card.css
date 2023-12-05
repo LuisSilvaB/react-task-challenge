@@ -1,0 +1,93 @@
+@media (max-width:600px) {
+    .iphone-card{
+        z-index: 0;
+        box-sizing: border-box;
+        padding: 12px;
+        width: 90%;
+        min-height: 285px;
+        height: 250px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+        background-color: var(--color-neutral-4);
+    }
+    .iphone-card__header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .iphone-card-header-text {}
+    
+    .iphone-card__dots-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .iphone-card__points {}
+      
+    .iphone-card__tag-date {
+        display: flex;
+        gap: 10px;
+    }
+      
+    .iphone-card__tag-img {
+
+    }
+      
+    .iphone-card__tags-container {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow: hidden;
+        text-overflow: "..";
+        white-space: nowrap;
+    }
+    
+    .iphone-card__tag {
+
+    }
+      
+    .iphone-card__fotter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+      
+      .iphone-card__fotter-user-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .iphone-card__fotter-user-img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+      
+      .iphone-card__fotter-user-name {}
+      
+      .iphone-card__fotter-info-container {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+      
+      .iphone-card__fotter-info-img {}
+      
+      .iphone-card__fotter-info-branch {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+}

@@ -1,0 +1,22 @@
+@media (min-width: 601px) {
+    .desktop-dashboard{
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+    }
+    .desktop-dashboard::-webkit-scrollbar{
+        height: 10px;
+        width: 10px;
+        border-radius: 20px;
+
+    }
+    .desktop-dashboard::-webkit-scrollbar-thumb{
+        width: 1px;
+        height: 10px;
+        background-color: var(--color-neutral-3);
+        border-radius: 20px;
+    }
+}

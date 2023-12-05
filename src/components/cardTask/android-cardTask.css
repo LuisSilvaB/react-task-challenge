@@ -1,0 +1,93 @@
+@media (max-width:600px) {
+    .android-card{
+        z-index: 0;
+        box-sizing: border-box;
+        padding: 16px;
+        width: 90%;
+        min-height: 250px;
+        height: 240px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--color-neutral-4);
+    }
+    .android-card__header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .android-card-header-text {}
+    
+    .android-card__dots-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .android-card__points {}
+      
+    .android-card__tag-date {
+        display: flex;
+        gap: 10px;
+    }
+      
+    .android-card__tag-img {
+
+    }
+      
+    .android-card__tags-container {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow: hidden;
+        text-overflow: "..";
+        white-space: nowrap;
+    }
+    
+    .android-card__tag {
+
+    }
+      
+    .android-card__fotter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+      
+      .android-card__fotter-user-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .android-card__fotter-user-img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+      
+      .android-card__fotter-user-name {}
+      
+      .android-card__fotter-info-container {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+      
+      .android-card__fotter-info-img {}
+      
+      .android-card__fotter-info-branch {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+}

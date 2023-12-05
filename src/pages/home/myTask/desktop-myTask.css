@@ -1,0 +1,22 @@
+@media screen and (min-width: 601px) {
+    .desktop-myTasks{
+        width: 100%;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .desktop-myTasks::-webkit-scrollbar{
+        height: 10px;
+        width: 10px;
+        border-radius: 20px;
+
+    }
+    .desktop-myTasks::-webkit-scrollbar-thumb{
+        width: 1px;
+        height: 10px;
+        background-color: var(--color-neutral-3);
+        border-radius: 20px;
+    }
+}

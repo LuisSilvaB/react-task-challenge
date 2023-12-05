@@ -5,12 +5,19 @@ export const AppContext = createContext();
 
 export const AppContextProvider = ({children}) => {
     const [typeDevice, setTypeDevice] = useState('desktop'); 
-    const [typeForm, setTypeForm] = useState('desktop'); 
-    const [isVisible, setIsVisible] = useState(true);
-    const [messageError, setMessageError] = useState(); 
+    const [typeForm, setTypeForm] = useState(''); 
+    const [typeGlobalOptions, setTypeGlobalOptions] = useState('')
+    const [isVisible, setIsVisible] = useState(false);
+    const [showAlert, setShowAlert] = useState("closeAlert")
+    const [messageAlert, setMessageAlert] = useState(""); 
+    const [typeAlert, setTypeAlert] = useState(""); 
     const [users, setUsers] = useState(); 
-    const [userData, setUserData] = useState(); 
-    const [task, setTask] = useState({
+    const [listsToUpdate, setListsToUpdate] = useState([]); 
+    const [userData, setUserData] = useState({
+        avatar:'', 
+        name:''
+    }); 
+    const [taskContext, setTaskContext] = useState({
         name: "",
         dueDate: "",
         assigneeId: "",
@@ -18,6 +25,14 @@ export const AppContextProvider = ({children}) => {
         status: "BACKLOG",
         tags: []
     }); 
+    const [infoFormTask, setInfoFormtask] = useState({
+        dueDate: "",
+        assigneeId: "",
+        pointEstimate: "",
+        tags: [],
+        img:"",
+        name:"", 
+    })
 
 
     useEffect(()=>{
@@ -26,6 +41,7 @@ export const AppContextProvider = ({children}) => {
             setDevice(userAgent)
         })()
     },[])
+
     const setDevice = (data) => {
         if (data.includes('android')) {
             setTypeDevice('android');
@@ -34,14 +50,12 @@ export const AppContextProvider = ({children}) => {
         } else if (data.includes('windows') || data.includes('linux')) {
             setTypeDevice('desktop');
         } else {
-            setMessageError('Device not found');
+            messageAlert('Device not found');
         }
     };
 
-    const CreateTask = (task) => {
-        const [ createTask , loading, error, data ] = useCreateTaskMutation(); 
-        createTask(task); 
-        setTask({
+    const clearStates = () => {
+        setTaskContext({
             name: "",
             dueDate: "",
             assigneeId: "",
@@ -49,11 +63,42 @@ export const AppContextProvider = ({children}) => {
             status: "BACKLOG",
             tags: []
         }); 
-        return {loading, error, data}
+        setInfoFormtask({
+            dueDate: "",
+            assigneeId: "",
+            pointEstimate: "",
+            tags: [],
+            img:"",
+            name:""
+        })
     }
 
     return(
-        <AppContext.Provider value={{typeDevice, task ,setTask, CreateTask, typeForm, setTypeForm, isVisible, setIsVisible}}>
+        <AppContext.Provider value={{
+            typeDevice, 
+            setTypeDevice, 
+            taskContext,
+            setTaskContext,
+            clearStates, 
+            typeForm, 
+            setTypeForm, 
+            isVisible, 
+            setIsVisible, 
+            users, 
+            setUsers, 
+            infoFormTask, 
+            setInfoFormtask, 
+            typeGlobalOptions, 
+            setTypeGlobalOptions,
+            showAlert,
+            setShowAlert,
+            messageAlert,
+            setMessageAlert,
+            typeAlert,
+            setTypeAlert,
+            listsToUpdate,
+            setListsToUpdate
+            }}> 
             {children}
         </AppContext.Provider>
     )

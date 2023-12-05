@@ -1,5 +1,10 @@
-export const TASK_TAG =['ANDROID', 'IOS', 'NODE_JS', 'RAILS', 'REACT']
-export const STATUS = [ 'BACKLOG', 'CANCELLED', 'DONE', 'IN_PROGRESS', 'TODO']
+export const TASK_TAG = {
+    ANDROID:'ANDROID',
+    IOS:'IOS APP',
+    NODE_JS:'NODE JS',
+    RAILS:'RAILS',
+    REACT:'REACT',
+}
 export const POINT_ESTIMATE = {
     ZERO:0,
     ONE:1,
@@ -8,8 +13,15 @@ export const POINT_ESTIMATE = {
     EIGHT:8,
 }
 export const TASK_SELECT_OPTIONS = {
-    formEstimate:'Estimate',
-    formAssigne:'Assignee',
-    formLabel:'Label',
-    formCalendar:'Due date',
+    pointEstimate:'Estimate',
+    assigneeId:'Assignee',
+    tags:'Label',
+    dueDate:'Due date',
 }
+export const STATUS_TASK ={
+    BACKLOG:'Backlog',
+    TODO: 'Todo',
+    IN_PROGRESS: 'In Progress', 
+    DONE: 'Done', 
+    CANCELLED: 'Cancelled',
+} 

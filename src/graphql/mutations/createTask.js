@@ -1,7 +1,7 @@
 import {gql} from '@apollo/client'
 export const CREATE_TASK = gql`
-    mutation CreateNewTask($task: CreateTaskInput!) {
-    createTask(input: $task) {
+    mutation CreateNewTask($taskContext: CreateTaskInput!) {
+    createTask(input: $taskContext) {
         id
         name
         createdAt
