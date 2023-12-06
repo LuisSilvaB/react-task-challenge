@@ -1,6 +1,5 @@
 import { ApolloClient, InMemoryCache, HttpLink, ApolloLink } from '@apollo/client';
 const synApiToken = import.meta.env.VITE_APOLLO_CLIENT_SYN;
-console.log();
 const authLink = new ApolloLink((operation, forward) => {
   operation.setContext({
     headers: {

@@ -59,7 +59,6 @@ export default function TaskTable(props) {
         updateTask({variables:{
             taskContext:taskContext,
         }})
-      console.log(console.log(listsToUpdate));
         setListsToUpdate([])
         setIndrop(!inDrop)
     }
