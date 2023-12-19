@@ -35,6 +35,7 @@
         flex-direction: row;
         justify-content: start;
         align-items: center;
+        color: var(--color-neutral-1);
         gap: 20px;
     } 
     .android-sidebar__option:active{

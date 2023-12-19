@@ -1,0 +1,32 @@
+@media (max-width: 600px) {
+    .android-button{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 8px;
+        border-radius: 8px;
+    } 
+    .android-button:hover{
+        cursor: pointer;
+    }
+    .android-button-cancel{
+        color: var(--color-neutral-1);
+    }
+    .android-button-create{
+        background-color: var(--color-primary-2);
+        
+    }
+    .android-button-text{
+        color: var(--color-neutral-1);
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .android-button-cardoptions{
+        width: 100%;
+    }
+}

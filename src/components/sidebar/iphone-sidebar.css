@@ -37,6 +37,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        color: var(--color-neutral-1);
         gap: 4px;
     } 
     .iphone-sidebar__option .sidebar-link{

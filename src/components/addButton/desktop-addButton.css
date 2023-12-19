@@ -7,6 +7,7 @@
         align-items: center;
         border-radius: 8px;
         background-color: var(--color-primary-4);
+        color: var(--color-neutral-1);
     }
     .desktop-mainControls__button-add:hover{
         cursor: pointer;

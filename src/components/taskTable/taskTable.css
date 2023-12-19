@@ -5,6 +5,7 @@
     background-color: var(--color-neutral-4);
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
+    color: var(--color-neutral-1);
   }
   
   .task-table__status {

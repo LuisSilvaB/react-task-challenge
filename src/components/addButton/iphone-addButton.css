@@ -6,6 +6,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--color-neutral-1);
     }
     .iphone-mainControls__button-add:hover{
         cursor: pointer;

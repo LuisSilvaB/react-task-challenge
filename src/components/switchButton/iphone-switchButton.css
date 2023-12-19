@@ -18,6 +18,8 @@
     }
     .iphone-switch__option{
         text-align: center;
+        color: var(--color-neutral-1);
+
     }
     .switchLink{
         color: currentColor;

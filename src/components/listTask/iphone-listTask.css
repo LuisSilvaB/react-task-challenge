@@ -10,7 +10,7 @@
         flex-direction: column;
         gap: 10px;
         overflow: scroll;
-
+        color: var(--color-neutral-1);
     }
     .iphone-listTask::-webkit-scrollbar{
         height: 10px;

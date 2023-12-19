@@ -11,12 +11,15 @@
     .desktop-button:hover{
         cursor: pointer;
     }
-    .desktop-button-cancel{}
+    .desktop-button-cancel{
+        color: var(--color-neutral-1);
+    }
     .desktop-button-create{
         background-color: var(--color-primary-2);
         
     }
     .desktop-button-text{
+        color: var(--color-neutral-1);
         margin: 0px;
         display: flex;
         justify-content: center;

@@ -12,6 +12,7 @@
         border: solid 0.1px transparent;
         border-radius: 8px;
         padding: 7px;
+        color: var(--color-neutral-1);
     }
     .desktop-switch-button:hover{
         cursor: pointer;
