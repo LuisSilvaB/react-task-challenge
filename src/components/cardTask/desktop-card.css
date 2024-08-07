@@ -85,7 +85,10 @@
         gap: 15px;
       }
       
-      .desktop-card__fotter-info-img {}
+      .desktop-card__fotter-info-img {
+        width: 14px;
+        height: auto;
+      }
       
       .desktop-card__fotter-info-branch {
         display: flex;

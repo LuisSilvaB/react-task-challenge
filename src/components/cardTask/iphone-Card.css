@@ -82,7 +82,10 @@
         gap: 15px;
       }
       
-      .iphone-card__fotter-info-img {}
+      .iphone-card__fotter-info-img {
+        width: 14px;
+        height: auto;
+      }
       
       .iphone-card__fotter-info-branch {
         display: flex;
